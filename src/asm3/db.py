@@ -37,7 +37,7 @@ def get_database(alias = ""):
 def _get_multiple_database_info(alias):
     """ Gets the Database object for the alias in our map MULTIPLE_DATABASES_MAP. """
     if alias not in MULTIPLE_DATABASES_MAP:
-        dbo = get_database()
+        dbo = get_dbo()
         dbo.database = "FAIL"
         return dbo
     mapinfo = MULTIPLE_DATABASES_MAP[alias]
